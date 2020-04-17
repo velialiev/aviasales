@@ -1,0 +1,44 @@
+@import "variables";
+
+.card {
+  background: $lightest;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+
+  // TODO (28.03.2020): refactor this shit
+  &--without-paddings {
+    padding: 0 0 10px 0;
+
+    .card__subtitle {
+      padding: {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+      };
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    color: $main;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 12px;
+    color: $darkest;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__logo {
+
+  }
+
+  &__content {
+
+  }
+}

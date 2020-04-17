@@ -1,0 +1,17 @@
+.page {
+  display: flex;
+}
+.page__filters {
+  flex: 1;
+  margin-right: 20px;
+  height: 100%;
+}
+.page__content {
+  flex: 2;
+}
+
+.tickets .tickets__sorter {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=tickets-page.css.map */

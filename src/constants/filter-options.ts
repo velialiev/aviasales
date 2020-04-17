@@ -1,0 +1,43 @@
+import { LOCALIZATION } from './localization'
+
+export enum FILTER_TYPES {
+  ALL = 'ALL',
+  WITHOUT_TRANSFERS = 'WITHOUT_TRANSFERS',
+  ONE_TRANSFER = 'ONE_TRANSFER',
+  TWO_TRANSFERS = 'TWO_TRANSFERS',
+  THREE_TRANSFERS = 'THREE_TRANSFERS',
+}
+
+export const FILTER_OPTIONS: IFilter[] = [
+  {
+    id: FILTER_TYPES.ALL,
+    text: LOCALIZATION.TICKETS_FILTERS_OPTIONS.ALL,
+    count: -1,
+  },
+  {
+    id: FILTER_TYPES.WITHOUT_TRANSFERS,
+    text: LOCALIZATION.TICKETS_FILTERS_OPTIONS.WITHOUT_TRANSFERS,
+    count: 0,
+  },
+  {
+    id: FILTER_TYPES.ONE_TRANSFER,
+    text: LOCALIZATION.TICKETS_FILTERS_OPTIONS.ONE_TRANSFER,
+    count: 1,
+  },
+  {
+    id: FILTER_TYPES.TWO_TRANSFERS,
+    text: LOCALIZATION.TICKETS_FILTERS_OPTIONS.TWO_TRANSFERS,
+    count: 2,
+  },
+  {
+    id: FILTER_TYPES.THREE_TRANSFERS,
+    text: LOCALIZATION.TICKETS_FILTERS_OPTIONS.THREE_TRANSFERS,
+    count: 3,
+  },
+]
+
+export interface IFilter {
+  id: FILTER_TYPES
+  text: string
+  count: number
+}

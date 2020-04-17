@@ -1,0 +1,17 @@
+import { LOCALIZATION } from './localization'
+
+export enum SORTING_TYPES {
+  CHEAPEST = 'CHEAPEST',
+  FASTEST = 'FASTEST',
+}
+
+export const SORTING_OPTIONS = [
+  {
+    id: SORTING_TYPES.CHEAPEST,
+    text: LOCALIZATION.SORTING_BUTTON_TOGGLE.CHEAPEST,
+  },
+  {
+    id: SORTING_TYPES.FASTEST,
+    text: LOCALIZATION.SORTING_BUTTON_TOGGLE.FASTEST,
+  },
+]

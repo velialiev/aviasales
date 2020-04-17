@@ -1,0 +1,28 @@
+@import "variables";
+
+.table {
+  &__row {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__col {
+
+  }
+
+  &__header {
+    font-weight: 600;
+    font-size: 12px;
+    color: $darker;
+    text-transform: uppercase;
+  }
+
+  &__data {
+    font-weight: 600;
+    font-size: 14px;
+    color: $darkest;
+  }
+}

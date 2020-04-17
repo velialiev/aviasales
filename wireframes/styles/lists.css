@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.list__item {
+  margin-bottom: 20px;
+}
+.list__item:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=lists.css.map */

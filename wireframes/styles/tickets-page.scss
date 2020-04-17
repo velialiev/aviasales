@@ -1,0 +1,33 @@
+.page {
+  display: flex;
+
+  &__filters {
+    width: 232px;
+    margin-right: 20px;
+    height: 100%;
+  }
+
+  &__content {
+    width: 502px;
+  }
+}
+
+.tickets {
+  .tickets__sorter {
+    margin-bottom: 20px;
+  }
+
+  .tickets__content {
+
+  }
+}
+
+.ticket {
+  &__header {
+    margin-bottom: 20px;
+  }
+
+  &__content {
+
+  }
+}

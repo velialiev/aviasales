@@ -1,0 +1,14 @@
+.card {
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+}
+.card__title {
+  font-size: 24px;
+  color: #2196F3;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=cards.css.map */

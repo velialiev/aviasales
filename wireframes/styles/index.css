@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3F7FA;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 755px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-toggle {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.btn-toggle__item {
+  width: 100%;
+  border: 1px solid #DFE5EC;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px 57px;
+  font-size: 12px;
+  color: #4A4A4A;
+  background-color: #FFFFFF;
+}
+.btn-toggle__item:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.btn-toggle__item:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.btn-toggle__item--active {
+  border: none;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+}
+.card--without-paddings {
+  padding: 0 0 10px 0;
+}
+.card--without-paddings .card__subtitle {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card__title {
+  font-size: 24px;
+  color: #2196F3;
+  font-weight: 600;
+}
+.card__subtitle {
+  font-weight: 600;
+  font-size: 12px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.checkbox {
+  display: block;
+  padding-left: 30px;
+  width: 100%;
+  color: #4A4A4A;
+}
+.checkbox__input {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.checkbox__icon {
+  position: absolute;
+  margin-left: -30px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #9ABBCE;
+  border-radius: 2px;
+}
+.checkbox__input:checked + .checkbox__icon {
+  border-color: #2196F3;
+  background: url(../assets/checked.svg) no-repeat center center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.list__item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.list__item:last-child {
+  margin-bottom: 0;
+}
+.list__item.checkbox {
+  padding-left: 50px !important;
+}
+.list--selection .list__item {
+  margin-bottom: 0;
+  padding: 10px 20px;
+}
+.list--selection .list__item:hover {
+  background-color: #F1FCFF;
+}
+
+.table__row {
+  margin-bottom: 10px;
+}
+.table__row:last-child {
+  margin-bottom: 0;
+}
+.table__header {
+  font-weight: 600;
+  font-size: 12px;
+  color: #A0B0B9;
+  text-transform: uppercase;
+}
+.table__data {
+  font-weight: 600;
+  font-size: 14px;
+  color: #4A4A4A;
+}
+
+.page {
+  display: flex;
+}
+.page__filters {
+  width: 232px;
+  margin-right: 20px;
+  height: 100%;
+}
+.page__content {
+  width: 502px;
+}
+
+.tickets .tickets__sorter {
+  margin-bottom: 20px;
+}
+.ticket__header {
+  margin-bottom: 20px;
+}
+header {
+  padding: 25px 0;
+}
+
+/*# sourceMappingURL=index.css.map */
